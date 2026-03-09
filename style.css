@@ -576,6 +576,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .footer-bottom { padding: 24px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
 .footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
 .footer-oab { font-style: italic; }
+/* Trabalhista side labels */
+.trab-side-label { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; padding: 10px 20px; background: rgba(184,149,46,0.08); border-left: 3px solid var(--gold); border-radius: 0 var(--radius) var(--radius) 0; }
+.trab-side-label i { color: var(--gold); font-size: 1rem; }
+.trab-side-label span { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+.trab-side-employer { background: rgba(30,50,80,0.06); border-left-color: var(--navy-light); }
+.trab-side-employer i, .trab-side-employer span { color: var(--navy-light); }
+
+.footer-social { display: flex; gap: 10px; margin-top: 18px; }
+.footer-social a { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.5); font-size: 0.9rem; transition: var(--transition); }
+.footer-social a:hover { background: var(--gold); border-color: var(--gold); color: var(--navy); }
 
 /* ========================================
    WHATSAPP FLOAT & BACK TO TOP
