@@ -1046,12 +1046,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   position: relative;
   overflow: hidden;
 }
-.area-hero.hero-civil        { background: linear-gradient(135deg, rgba(7,17,28,0.87) 0%, rgba(13,26,40,0.80) 60%, rgba(15,35,64,0.87) 100%), url('imagens/Direito-civil.png') center/cover no-repeat; }
-.area-hero.hero-trabalhista  { background: linear-gradient(135deg, rgba(7,17,28,0.87) 0%, rgba(13,26,40,0.80) 60%, rgba(15,35,64,0.87) 100%), url('imagens/Direito-trabalho.png') center/cover no-repeat; }
-.area-hero.hero-bancario     { background: linear-gradient(135deg, rgba(7,17,28,0.87) 0%, rgba(13,26,40,0.80) 60%, rgba(15,35,64,0.87) 100%), url('imagens/Direito-banc%C3%A1rio.png') center/cover no-repeat; }
-.area-hero.hero-consumidor   { background: linear-gradient(135deg, rgba(7,17,28,0.87) 0%, rgba(13,26,40,0.80) 60%, rgba(15,35,64,0.87) 100%), url('imagens/Direito-consumidor.png') center/cover no-repeat; }
-.area-hero.hero-previdenciario { background: linear-gradient(135deg, rgba(7,17,28,0.87) 0%, rgba(13,26,40,0.80) 60%, rgba(15,35,64,0.87) 100%), url('imagens/Direito-previdenci%C3%A1rio.png') center/cover no-repeat; }
-.area-hero.hero-saude        { background: linear-gradient(135deg, rgba(7,17,28,0.87) 0%, rgba(13,26,40,0.80) 60%, rgba(15,35,64,0.87) 100%), url('imagens/Direito-sa%C3%BAde.png') center/cover no-repeat; }
+.area-hero.hero-civil          { background: linear-gradient(135deg, rgba(7,17,28,0.72) 0%, rgba(13,26,40,0.62) 60%, rgba(15,35,64,0.72) 100%), url('imagens/hero-civil.png') center/cover no-repeat; }
+.area-hero.hero-trabalhista    { background: linear-gradient(135deg, rgba(7,17,28,0.72) 0%, rgba(13,26,40,0.62) 60%, rgba(15,35,64,0.72) 100%), url('imagens/hero-trabalhista.png') center/cover no-repeat; }
+.area-hero.hero-bancario       { background: linear-gradient(135deg, rgba(7,17,28,0.72) 0%, rgba(13,26,40,0.62) 60%, rgba(15,35,64,0.72) 100%), url('imagens/hero-bancario.png') center/cover no-repeat; }
+.area-hero.hero-consumidor     { background: linear-gradient(135deg, rgba(7,17,28,0.72) 0%, rgba(13,26,40,0.62) 60%, rgba(15,35,64,0.72) 100%), url('imagens/hero-consumidor.png') center/cover no-repeat; }
+.area-hero.hero-previdenciario { background: linear-gradient(135deg, rgba(7,17,28,0.72) 0%, rgba(13,26,40,0.62) 60%, rgba(15,35,64,0.72) 100%), url('imagens/hero-previdenciario.png') center/cover no-repeat; }
+.area-hero.hero-saude          { background: linear-gradient(135deg, rgba(7,17,28,0.72) 0%, rgba(13,26,40,0.62) 60%, rgba(15,35,64,0.72) 100%), url('imagens/hero-saude.png') center/cover no-repeat; }
 .area-hero::before {
   content: '';
   position: absolute;
