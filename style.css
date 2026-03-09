@@ -1200,22 +1200,27 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   /* Hamburger menu starts at 1024px */
   .nav-menu {
+    display: none;
     position: fixed;
     top: 80px; left: 0; right: 0;
     background: rgba(13,27,42,0.98);
     backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
     gap: 2px;
-    transform: translateY(-110%);
-    transition: transform 0.35s ease;
     border-bottom: 1px solid rgba(201,168,76,0.2);
     max-height: calc(100vh - 80px);
     overflow-y: auto;
     z-index: 999;
+    animation: slideDown 0.28s ease;
   }
-  .nav-menu.open { transform: translateY(0); }
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .nav-menu.open { display: flex; }
   .hamburger { display: flex; }
   .dropdown-menu {
     position: static;
