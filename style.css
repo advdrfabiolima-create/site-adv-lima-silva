@@ -37,19 +37,23 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* === LOGO IMAGE === */
 .logo-img {
-  height: 56px;
+  height: 68px;
   width: auto;
+  max-width: 240px;
   object-fit: contain;
+  object-position: left center;
   display: block;
+  flex-shrink: 0;
 }
 .footer-logo-img {
-  height: 60px;
+  height: 64px;
   width: auto;
+  max-width: 220px;
   object-fit: contain;
   display: block;
-  margin-bottom: 16px;
-  filter: brightness(0) invert(1);   /* branco no fundo escuro do footer */
-  opacity: 0.92;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
 }
 
 /* === UTILITIES === */
@@ -160,7 +164,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: space-between;
   height: 80px;
 }
-.nav-logo { display: flex; flex-direction: column; line-height: 1; }
+.nav-logo { display: flex; flex-direction: column; line-height: 1; flex-shrink: 0; }
 .logo-text {
   font-family: var(--font-heading);
   font-size: 1.35rem;
@@ -725,6 +729,183 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 @media (max-width: 768px) {
   .lead-grid { grid-template-columns: 1fr; gap: 40px; }
   .lead-benefits { grid-template-columns: 1fr; }
+}
+
+/* ========================================
+   LAWTECH PRO BANNER
+   ======================================== */
+.lawtech-banner {
+  background: #080f18;
+  position: relative;
+  overflow: hidden;
+  padding: 88px 0;
+}
+/* Efeito de grade tecnológica */
+.lawtech-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(184,149,46,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,149,46,0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+/* Brilho central */
+.lawtech-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(184,149,46,0.07) 0%, transparent 65%);
+}
+.lawtech-inner {
+  position: relative;
+  z-index: 2;
+}
+/* Topo da seção */
+.lawtech-top {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.lawtech-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(184,149,46,0.08);
+  border: 1px solid rgba(184,149,46,0.22);
+  color: var(--gold);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 2px;
+  margin-bottom: 28px;
+}
+.lawtech-logo-img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto 20px;
+  display: block;
+}
+.lawtech-headline {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+.lawtech-headline em { font-style: italic; font-weight: 400; color: var(--gold); }
+.lawtech-sub {
+  font-size: 0.97rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.78;
+  max-width: 580px;
+  margin: 0 auto;
+}
+/* Grid de features */
+.lawtech-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 48px;
+}
+.lawtech-feat-card {
+  border: 1px solid rgba(184,149,46,0.14);
+  border-radius: var(--radius-lg);
+  padding: 28px 22px;
+  text-align: center;
+  transition: var(--transition);
+}
+.lawtech-feat-card:hover {
+  border-color: rgba(184,149,46,0.4);
+  background: rgba(184,149,46,0.04);
+  transform: translateY(-3px);
+}
+.lawtech-feat-card i {
+  font-size: 1.6rem;
+  color: var(--gold);
+  margin-bottom: 14px;
+  display: block;
+}
+.lawtech-feat-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.lawtech-feat-card p {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.48);
+  line-height: 1.65;
+}
+/* CTAs */
+.lawtech-ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.btn-lawtech-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gold);
+  color: #080f18;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 16px 36px;
+  border-radius: 3px;
+  transition: var(--transition);
+}
+.btn-lawtech-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(184,149,46,0.4);
+}
+.btn-lawtech-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid rgba(184,149,46,0.45);
+  color: rgba(255,255,255,0.8);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 15px 32px;
+  border-radius: 3px;
+  transition: var(--transition);
+}
+.btn-lawtech-outline:hover { border-color: var(--gold); color: var(--gold); }
+/* Nota de rodapé */
+.lawtech-note {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 1024px) {
+  .lawtech-features-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .lawtech-features-grid { grid-template-columns: 1fr 1fr; }
+  .lawtech-ctas { flex-direction: column; }
+  .btn-lawtech-primary, .btn-lawtech-outline { width: 100%; justify-content: center; }
+}
+@media (max-width: 480px) {
+  .lawtech-features-grid { grid-template-columns: 1fr; }
 }
 
 /* ========================================
