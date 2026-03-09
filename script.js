@@ -68,6 +68,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* === DESKTOP DROPDOWN: stable hover with delay === */
+  const desktopDropdowns = document.querySelectorAll('.navbar .dropdown');
+  desktopDropdowns.forEach(drop => {
+    let hideTimer = null;
+
+    const show = () => {
+      clearTimeout(hideTimer);
+      drop.classList.add('is-open');
+    };
+
+    const hide = () => {
+      hideTimer = setTimeout(() => {
+        drop.classList.remove('is-open');
+      }, 180);
+    };
+
+    drop.addEventListener('mouseenter', show);
+    drop.addEventListener('mouseleave', hide);
+
+    // Keep open while hovering the menu itself
+    const menu = drop.querySelector('.dropdown-menu');
+    if (menu) {
+      menu.addEventListener('mouseenter', show);
+      menu.addEventListener('mouseleave', hide);
+    }
+  });
+
   /* === BACK TO TOP === */
   const backToTop = document.getElementById('backToTop');
   if (backToTop) {
