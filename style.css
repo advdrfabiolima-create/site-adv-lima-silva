@@ -46,9 +46,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-shrink: 0;
 }
 .footer-logo-img {
-  height: 64px;
+  height: 90px;
   width: auto;
-  max-width: 220px;
+  max-width: 280px;
   object-fit: contain;
   display: block;
   margin-bottom: 20px;
