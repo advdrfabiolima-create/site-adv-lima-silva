@@ -37,7 +37,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* === LOGO IMAGE === */
 .logo-img {
-  height: 68px;
+  height: 82px;
   width: auto;
   max-width: 240px;
   object-fit: contain;
@@ -46,7 +46,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-shrink: 0;
 }
 .footer-logo-img {
-  height: 90px;
+  height: 108px;
   width: auto;
   max-width: 280px;
   object-fit: contain;
@@ -1236,7 +1236,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .dropdown.open .dropdown-menu { display: block; }
   .nav-link { width: 100%; }
   .nav-btn { width: 100%; justify-content: center; margin-left: 0; margin-top: 8px; }
-  .logo-img { height: 52px; }
+  .logo-img { height: 62px; }
 }
 
 @media (max-width: 768px) {
@@ -1271,6 +1271,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .why-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 2rem; }
   .area-hero h1 { font-size: 1.8rem; }
-  .logo-img { height: 44px; }
+  .logo-img { height: 53px; }
   .nav-container { padding: 0 16px; }
 }
