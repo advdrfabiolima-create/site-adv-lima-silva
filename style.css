@@ -22,7 +22,7 @@
   --radius:     6px;
   --radius-lg:  14px;
   --transition: all 0.32s ease;
-  --font-heading: 'Cormorant Garamond', 'Georgia', serif;
+  --font-heading: 'Playfair Display', 'Georgia', serif;
   --font-body:    'DM Sans', system-ui, sans-serif;
 }
 
@@ -523,7 +523,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .why-icon i { font-size: 1.5rem; color: var(--gold); }
 .why-card:hover .why-icon { background: var(--gold); }
 .why-card:hover .why-icon i { color: var(--navy); }
-.why-card h3 { font-family: var(--font-heading); font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 10px; text-transform: uppercase; }
+.why-card h3 { font-family: var(--font-heading); font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 10px; text-transform: uppercase; }
 .why-card p { font-size: 0.84rem; color: rgba(255,255,255,0.55); line-height: 1.72; }
 
 /* ========================================
@@ -854,7 +854,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .lawtech-feat-card h4 {
   font-family: var(--font-heading);
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--white);
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -1112,7 +1112,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .service-card:hover { border-color: rgba(201,168,76,0.4); box-shadow: var(--shadow); }
 .service-card i { font-size: 1.5rem; color: var(--gold); margin-bottom: 14px; display: block; }
-.service-card h4 { font-family: var(--font-heading); font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: 8px; text-transform: uppercase; }
+.service-card h4 { font-family: var(--font-heading); font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; text-transform: uppercase; }
 .service-card p { font-size: 0.84rem; color: var(--text-light); line-height: 1.68; }
 
 /* Area Info */
