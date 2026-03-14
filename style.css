@@ -752,6 +752,107 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ========================================
+   PORTAL DO CLIENTE
+   ======================================== */
+.portal {
+  background: var(--cream);
+  padding: 96px 0;
+}
+.portal-inner {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.portal-icon-wrap {
+  width: 80px;
+  height: 80px;
+  background: var(--navy);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 28px;
+}
+.portal-icon-wrap i {
+  font-size: 2rem;
+  color: var(--gold);
+}
+.portal-desc {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  max-width: 560px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+.portal-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.portal-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.portal-step-num {
+  width: 44px;
+  height: 44px;
+  background: var(--navy);
+  color: var(--gold);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portal-step span {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-weight: 500;
+  max-width: 100px;
+  text-align: center;
+  line-height: 1.4;
+}
+.portal-step-arrow {
+  color: var(--gold);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.btn-portal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--navy);
+  color: var(--gold);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 18px 40px;
+  border-radius: var(--radius);
+  border: 2px solid var(--navy);
+  transition: var(--transition);
+}
+.btn-portal:hover {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(184,149,46,0.3);
+}
+@media (max-width: 768px) {
+  .portal-step-arrow { display: none; }
+  .portal-steps { gap: 20px; }
+  .portal { padding: 72px 0; }
+}
+
+/* ========================================
    LAWTECH PRO BANNER
    ======================================== */
 .lawtech-banner {
